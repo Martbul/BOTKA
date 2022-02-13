@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_VOICE_STATES'] })
-const (config.token) = require("./config.json");
+const token = require("./config.json");
 
 
 let prefix = 'botka '
@@ -15,4 +15,4 @@ client.on('messageCreate', (message) => {
 })
 
 
-client.login(config.token); 
+client.login (token); 
