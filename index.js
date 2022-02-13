@@ -3,14 +3,15 @@ const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_
 const { token } = require("./config.json");
 
 
-let prefix='botka '
+let prefix = 'botka '
 
 
 client.on('ready', () => { console.log('Ready!') })
 
 
 client.on('messageCreate', (message) => {
-
+    if (message.content.includes("шаран"))
+        message.channel.send('никола')
 })
 
 
